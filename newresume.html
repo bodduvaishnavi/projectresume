@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vaishnavi Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .button-container {
+      text-align: center;
+      padding: 50px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #showResumeBtn {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: blue;
+      color: rgb(22, 4, 22);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #showResumeBtn:hover {
+      background-color: darkblue;
+    }
+
+    .resume-container {
+      display: none;
+      flex-direction: row;
+    }
+
+    .sidebar {
+      width: 30%;
+      background-color: #2071c3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid white;
+    }
+
+    .sidebar h2 {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+      margin-top: 20px;
+    }
+
+    .sidebar p, .sidebar a {
+      color: white;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+    }
+
+    .main-content {
+      width: 70%;
+      padding: 30px;
+      background-color: white;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+  <h2>Click to check my resume</h2>
+  <button id="showResumeBtn">Show Resume</button>
+</div>
+
+<div class="resume-container" id="resumeContent">
+  <div class="sidebar">
+    <img src="photo.jpg" alt="Vaishnavi Photo" />
+
+    <h2>CONTACT</h2>
+    <p>📞 +91 7075072338</p>
+    <p>📧 bodduvaishnavi1234@gmail.com</p>
+    <p>🔗 <a href="www.linkedin.com/in/vaishnavi-boddu-338887259" target="_blank">www.linkedin.com/in/vaishnavi-boddu-338887259</a></p>
+
+    <h2>EDUCATION</h2>
+    <p><strong>B.Tech CSE</strong><br>S.R.K Institute of Technology<br>CGPA: 7.53</p>
+    <p><strong>Intermediate (MPC)</strong><br>Sri Chaitanya Junior College<br>CGPA: 7.31</p>
+    <p><strong>SSC</strong><br>Atkinson School<br>Marks: 291</p>
+
+    <h2>HOBBIES</h2>
+    <ul style="text-align: left;">
+      <li>Listening to Music</li>
+      <li>Playing Games</li>
+      <li>Traveling</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>VAISHNAVI BODDU</h1>
+    <h2>CAREER OBJECTIVE</h2>
+    <p>To work with maximum potential in a challenging and dynamic environment, with an opportunity of working with diverse group of people and enhancing my professional skills with learning and experience for career growth.</p>
+
+    <h2>HARDWARE SKILLS</h2>
+    <ul>
+      <li>C, Python, Java</li>
+      <li>Web Development: HTML, CSS, JavaScript</li>
+    </ul>
+
+    <h2>SOFTWARE SKILLS</h2>
+    <ul>
+      <li>Problem Solving</li>
+      <li>Good Communication</li>
+      <li>Time Management</li>
+      <li>Collaboration</li>
+      <li>Adaptability</li>
+      <li>Creativity</li>
+    </ul>
+
+    <h2>DECLARATION</h2>
+    <p>I hereby declare that the particulars furnished above are true to the best of my knowledge and belief.</p>
+    <p>Place: VIJAYAWADA<br>Yours Sincerely,<br><strong>(Vaishnavi B)</strong></p>
+  </div>
+</div>
+
+<script>
+  document.getElementById("showResumeBtn").onclick = function () {
+    document.getElementById("resumeContent").style.display = "flex";
+    document.querySelector(".button-container").style.display = "none";
+  };
+</script>
+
+</body>
+</html>
